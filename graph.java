@@ -64,7 +64,7 @@ public class graph {
 		pair p = new pair();
 
 		String zvn = this.vertices.keySet().iterator().next();// for getting the
-																// first string
+							        	// first string
 		vertex v = vertices.get(zvn);
 		p.osf = zvn;
 		p.v = v;
@@ -257,7 +257,7 @@ public class graph {
 		while(partitionqueue.size()!=0){
 			
 		HashMap<String, Boolean> msthm = partitionqueue.remove();
-		mst=gt.MST(msthm);      // we are assuring ki agar priority queue me gaya hai to mst exist krta hai therefore not checking the condition of mst being empty
+		mst=gt.MST(msthm);      // we are assuring if it has gone inside priority queue,then mst exists therefore, not checking the condition of mst being empty
 		if(flag==0){
 			System.out.println(mst);
 			isMSTprinted=true;
